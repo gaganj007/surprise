@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-size: 2em;
+            overflow: hidden;
+        }
+        #message {
+            opacity: 0;
+            transform: scale(0);
+            transition: opacity 1s, transform 1s;
+        }
+        #message.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div id="message">❤️💖💞💕💓💗💘💝💟🌸🌹🌺🌻🌼🌷🌿🍃🍀😊😍😘😻🤗🎉✨🌸🌹🌺🌻🌼🌷🌿🍃🍀❤️💖💞💕💓💗💘💝💟</div>
+    <script>
+        window.onload = function() {
+            const message = document.getElementById("message");
+            message.classList.add("show");
+        }
+    </script>
+</body>
+</html>
